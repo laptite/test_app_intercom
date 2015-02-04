@@ -26,8 +26,6 @@
 
 <%= link_to 'New User', new_user_path %>
 
-<%= render 'layouts/intercom' %>
-
 <%= intercom_script_tag({
   app_id: configatron.intercom.app_id,
   user_id: session.id,
