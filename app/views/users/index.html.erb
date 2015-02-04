@@ -27,6 +27,7 @@
 <%= link_to 'New User', new_user_path %>
 
 <%= intercom_script_tag({
+  type: "user",
   app_id: configatron.intercom.app_id,
   user_id: session.id,
   user_hash: OpenSSL::HMAC.hexdigest("sha256", configatron.intercom.app_secret, session.id)
